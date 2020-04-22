@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="main-container my-5" (scroll)="handleScroll($event)"
+           [ngClass]="{'landscape': isLandscape, 'portrait': !isLandscape}">
+        <div class="custom-card d-flex justify-content-center align-items-center"
+             *ngFor="let item of filteredList" [ngStyle]="{'background-image': 'url(' + item.di_image + ')'}">
+          <span class="title">{{item.title}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <button class="btn btn-primary" (click)="isLandscape = !isLandscape">Change Orientation</button>
+    </div>
+  </div>
+</div>
