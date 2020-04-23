@@ -2,7 +2,6 @@
   display: flex;
   flex-wrap: wrap;
   background-color: #ccc;
-  padding: 10px;
   margin: auto;
   &.portrait {
     width: 700px;
@@ -20,7 +19,7 @@
     text-align: center;
     height: 200px;
     width: 200px;
-    margin: 7px;
+    margin: 11px;
     .title {
       font-size: 24px;
     }
